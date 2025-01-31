@@ -21,4 +21,5 @@ cd Lavalink-Puffer
 echo "Bắt đầu tải file Lavalink.jar/Start downloading Lavalink.jar file"
 wget -O Lavalink-$version.jar https://github.com/lavalink-devs/Lavalink/releases/download/$versionlavalink/Lavalink.jar
 echo "Đã Tải Xong/Download completed"
-echo "Tiếp theo tải application.yml
+echo "Tiếp theo tải application.yml/Next download application.yml"
+
