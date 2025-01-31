@@ -1,5 +1,10 @@
 #!/bin/bash
 clear
+RED='\033[0;31m'
+echo "------------------------"
+echo "SNIPA VN"
+echo "${RED}YouTube : https://youtube.com/@snipavn205"
+echo "------------------------"
 echo -e "Nhập phiên bản Lavalink/Enter Lavalink version"
 read versionlavalink
 echo -e "Your version is Lavalink-V3 or Lavalink-V4 choose 1 of 2/Phiên bản của bạn là Lavalink-V3 hoặc Lavalink-V4 chọn 1 trong 2.Hãy nhập v3 hoặc v4"
@@ -24,4 +29,8 @@ echo "Tiếp theo tải application.yml/Next download application.yml"
 wget -O application.yml https://github.com/Snhvn/Install-Proot-And-Install-Pufferpanel/raw/refs/heads/main/Lavalink/application-$v3v4.yml
 cd
 clear
+echo "------------------------"
+echo "SNIPA VN"
+echo "${RED}YouTube : https://youtube.com/@snipavn205"
+echo "------------------------"
 echo "Đã tải xong file application.yml vui lòng khởi Lavalink hoặc không :)))" 
