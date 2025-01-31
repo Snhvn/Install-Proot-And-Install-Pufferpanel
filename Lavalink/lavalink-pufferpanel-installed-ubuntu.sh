@@ -13,7 +13,7 @@ echo "Đợi 3s để cài đặt/Wait 3s to install"
 sleep 3
 clear
 echo "Loading..... Package/Đang Tải..... Package"
-apt update -y && apt install sudo && sudo apt install wget && sudo apt install curl && sudo apt install openjdk-21-jdk
+apt update -y && apt install sudo && sudo apt install wget && sudo apt install curl && sudo apt install nano && sudo apt install openjdk-21-jdk 
 echo "Đã tải xong package/Package downloaded"
 sleep 1
 echo "Tiếp theo tải lavalink/Next download lavalink"
