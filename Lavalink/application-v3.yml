@@ -10,7 +10,7 @@ plugins:
 lavalink:
   plugins:
       - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.3"
-        snapshot: false
+        repository: "https://maven.lavalink.dev/releases" # use https://maven.lavalink.dev/snapshots if you want to use a snapshot version.
  server:
     password: "https://dsc.gg/servertipacvn"
     sources:
