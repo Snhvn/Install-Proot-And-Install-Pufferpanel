@@ -4,6 +4,7 @@ lavalink:
           snapshot: false
         - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.4.1"
           repository: "https://maven.lavalink.dev/releases" # this is optional for lavalink v4.0.0-beta.5 or greater
+          snapshot: false
     server:
         bufferDurationMs: 400
         filters:
