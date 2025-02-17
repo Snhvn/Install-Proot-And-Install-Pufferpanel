@@ -12,3 +12,5 @@ cd /var/www/mythicaldash
   ./MythicalDash -environment:database # Setup the database connection
   ./MythicalDash -migrate # Migrate the database
   ./MythicalDash -environment:setup # Start a custom setup for the dash
+sudo crontab -e
+php /var/www/mythicaldash/crons/server.php >> /dev/null 2>&1
