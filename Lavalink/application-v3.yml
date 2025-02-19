@@ -130,7 +130,7 @@ sentry:
     dsn: ""
     environment: ""
 server:
-    address: 127.0.0.1
+    address: localhost
     http2:
         enabled: false
     port: 2333
