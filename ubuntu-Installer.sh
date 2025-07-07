@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOTFS_DIR=/projects/
+ROOTFS_DIR=$(pwd)
 export PATH=$PATH:~/.local/usr/bin
 
 max_retries=50
