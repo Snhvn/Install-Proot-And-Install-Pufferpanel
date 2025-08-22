@@ -38,3 +38,6 @@ clear
 echo -e "${GREEN}VNC server đã được cài đặt và chạy trên port $port.${NC}"
 echo -e "${YELLOW}Kết nối bằng VNC Viewer: 0.0.0.0:$port.${NC}"
 vncserver :1
+echo "!!Nếu kh có dịch vụ nào kh cho bn free tcp thì tôi sẽ chỉ bn"
+echo " - Dùng lệnh 'ssh -R root:$port:localhost:$port serveo.net' để kết nối tcp vnc"
+echo "!!Khi dùng lệnh xong rồi thì ip của nó là
