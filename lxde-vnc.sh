@@ -59,4 +59,4 @@ case "$yesorno" in
 esac
 
 echo "!!Đã xong rồi thì ip của bn là $name.serveo.net:$port"
-echo "Nếu bn có ip r nh quên thì dùng 'pkill ssh && systemctl restart ssh'"
+echo "Nếu bn có ip r nh quên thì dùng 'pkill ssh && service ssh restart'"
