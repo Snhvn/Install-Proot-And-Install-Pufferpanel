@@ -16,6 +16,10 @@ vncpasswd
 echo -e "${YELLOW} Tạo port cho vnc 5901 (bắt buộc phải nhập nếu kh bn sẽ bể zái)"
 echo "Nhớ đọc ở đầu khi mới bắt đầu vào .sh để chính xác port nếu kh sẽ bị lỗi"
 read port
+if [[ -z "$port" ]]; then
+    echo "M chx nhập port nên sẽ exit .sh, chạy lại file sh đi😈!"
+    exit 1
+fi
 vncserver :1
 vncserver -kill :1
 
