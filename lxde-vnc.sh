@@ -10,7 +10,7 @@ NC='\033[0m'
 
 
 apt update && apt upgrade -y
-apt install -y lxde tightvncserver socat
+apt install -y lxde tightvncserver socat openssh-server openssh-client
 echo -e "${YELLOW}tạo pass vnc cho user hiện tại...., nhớ đặt mật khẩu cho root r đặt luôn cho pass vnc${NC}"
 vncpasswd
 echo -e "${YELLOW}tạo port cho vnc 5901 (bắt buộc phải nhập nếu kh bn sẽ bể zái)"
@@ -40,5 +40,23 @@ echo -e "${YELLOW}Kết nối bằng VNC Viewer: 0.0.0.0:$port.${NC}"
 vncserver :1
 
 name=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8)
-nohup ssh -R $name:$port:localhost:$port serveo.net
-echo "!!Đã xong rồi thì ip của bn là $name.serveo.net:$port
+
+echo -n "Nếu bn chx có ip thì bn muốn tiếp tục để cài tcp giùm kh  (y/n)"
+read yesorno
+case "$yesorno" in
+  y|Y|Yes|yes)
+    echo "Đang kết nối tcp vnc $port..."
+    nohup ssh -R $name:$port:localhost:$port serveo.net
+    
+    ;;
+  n|N|No|no)
+    echo "Bn đã có đã có ip r à, mà bn chọn n thế ,thì thôi :)))"
+    exit 1
+    ;;
+  *)
+    echo "Nhập y or n, sao bn nhấn enter hay viết j đó phải k."
+    ;;
+esac
+
+echo "!!Đã xong rồi thì ip của bn là $name.serveo.net:$port"
+echo "Nếu bn có ip r nh quên thì dùng 'pkill ssh && systemctl restart ssh'"
