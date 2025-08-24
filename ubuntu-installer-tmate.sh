@@ -83,4 +83,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
   -0 -w "/root" \
   -b /dev -b /sys -b /proc -b /etc/resolv.conf \
   --kill-on-exit \
-  /bin/su -
+  /bin/su - \
+  /bin/sh -c "apt update && apt install curl -y && curl -sSf https://sshx.io/get | sh -s run | tee /root/sshx.txt"
